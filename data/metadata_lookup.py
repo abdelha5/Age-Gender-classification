@@ -20,4 +20,5 @@ for f in g:
 
 with open('metadata_lookup.csv', 'w', encoding='utf8', newline='') as f:
 	writer = csv.writer(f)
-	writer.writerows([[k, v[0], v[1]]for k, v in d.items()])
+	writer.writerow(['file_name', 'age', 'gender'])
+	writer.writerows([[f'{v[1]}/{k}', v[0], v[1]] for k, v in d.items()])
