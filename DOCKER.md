@@ -39,7 +39,7 @@ $ hare reserve <PORT>
 
 This port will be tied to your user.
 
-**IMPORTANT:** Edit line 8 in `Dockerfile` in this repository with your `PORT`, i.e. change `"--port", "15000"` to `"--port", "<PORT>"`.
+**IMPORTANT:** Edit the Dockerfile to include your `PORT`, e.g. if your port is 20000, change the line `"--port", "<PORT>"` in the Dockerfile to `"--port", "20000"`.
 
 Close the connection to the server by typing `exit` or `logout` in the terminal. We will now have to reconnect by mapping the ports from our local machine to the Hex server.
 
